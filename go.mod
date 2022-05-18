@@ -1,3 +1,3 @@
-module jonppenny.co.uk/go-examples
+module go-examples
 
 go 1.17

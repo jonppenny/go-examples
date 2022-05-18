@@ -9,7 +9,7 @@ func (s *Stack) Push(i int) {
 }
 
 func (s *Stack) Pop() int {
-	l := len(s.items)-1
+	l := len(s.items) - 1
 	r := s.items[l]
 	s.items = s.items[:l]
 	return r
