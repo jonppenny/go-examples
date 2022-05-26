@@ -20,12 +20,12 @@ func main() {
 		log.Fatal(err.Error())
 	}
 
-	for _, record := range records {
+	for i, record := range records {
 		data := csvRecords{
 			question: record[0],
 			answer:   record[1],
 		}
-		fmt.Println("What is " + data.question)
+		fmt.Printf("Question %d. What is %s\n", i+1, data.question)
 		var ua string
 		fmt.Scanln(&ua)
 		if ua == data.answer {
