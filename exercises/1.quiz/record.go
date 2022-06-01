@@ -20,10 +20,10 @@ func ReadFile(file string) ([][]string, error) {
 	defer f.Close()
 
 	cr := csv.NewReader(f)
-	records, err := cr.ReadAll()
+	r, err := cr.ReadAll()
 	if err != nil {
 		return [][]string{}, err
 	}
 
-	return records, nil
+	return r, nil
 }
