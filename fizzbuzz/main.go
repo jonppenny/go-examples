@@ -5,9 +5,12 @@ import "fmt"
 func main() {
 	fmt.Println("Enter a whole number")
 	var num int
-	fmt.Scanln(&num)
+	_, err := fmt.Scanln(&num)
+	if err != nil {
+		panic(err)
+	}
 
-	for i := 0; i <= num; i++ {
+	for i := 1; i <= num; i++ {
 		fizzBuzz(i)
 	}
 }
