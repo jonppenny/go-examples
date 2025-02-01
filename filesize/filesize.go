@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println(sizeConvert(2854125))
+	fmt.Println(sizeConvert(1 << 10))
 }
 
 func sizeConvert(bytes float64) string {

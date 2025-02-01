@@ -1,10 +1,9 @@
 package main
 
-import "fmt"
-
 func main() {
 	a, b := 12, 432
-	fmt.Println(swap(&a, &b))
+	swap(&a, &b)
+	println(a, b)
 }
 
 func swap(i *int, j *int) (int, int) {
