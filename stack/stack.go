@@ -1,16 +1,18 @@
 package main
 
-type Stack struct {
-	items []int
-}
+import (
+	"fmt"
 
-func (s *Stack) Push(i int) {
-	s.items = append(s.items, i)
-}
+	"go-examples/stack/helpers"
+)
 
-func (s *Stack) Pop() int {
-	l := len(s.items) - 1
-	r := s.items[l]
-	s.items = s.items[:l]
-	return r
+func main() {
+	s := helpers.Stack{}
+	fmt.Println(s)
+	s.Push(100)
+	s.Push(200)
+	s.Push(300)
+	fmt.Println(s)
+	s.Pop()
+	fmt.Println(s)
 }

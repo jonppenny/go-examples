@@ -63,6 +63,6 @@ func main() {
 	// Upload route
 	http.HandleFunc("/upload", uploadHandler)
 
-	//Listen on port 8080
+	// Listen on port 8080
 	http.ListenAndServe(":8080", nil)
 }

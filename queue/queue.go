@@ -1,9 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"go-examples/queue/helpers"
+)
 
 func main() {
-	q := Queue{}
+	q := helpers.Queue{}
 	fmt.Println(q)
 	q.Enqueue(100)
 	q.Enqueue(200)

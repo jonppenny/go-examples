@@ -1,4 +1,4 @@
-package main
+package helpers
 
 type Queue struct {
 	items []int
